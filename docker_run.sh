@@ -45,7 +45,7 @@ then
                         -p "${jupyter_port}":"${jupyter_port}" \
                         -w "${goal_dir}" \
                         -e JUPYTER_PORT="${jupyter_port}" \
-                        --name trailnet-pytorch-test \
+                        --name ros-pytorch \
                         coolcat647/ros-pytorch:${docker_tag}
 else
     printf "Run \"nvidia-docker\"\n"
@@ -53,6 +53,6 @@ else
                                -p "${jupyter_port}":"${jupyter_port}" \
                                -w ${goal_dir} \
                                -e JUPYTER_PORT="${jupyter_port}" \
-                               --name trailnet-pytorch-test \
+                               --name ros-pytorch \
                                coolcat647/ros-pytorch:${docker_tag}
 fi
