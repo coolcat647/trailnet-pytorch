@@ -1,0 +1,15 @@
+.ipynb_checkpoints
+*.pyc
+*.zip
+
+# Caffe pre-trained model and prototxt
+*.prototxt
+*.caffemodel
+
+# Pytorch pre-trained model 
+*.pth
+*.h5
+
+# Dataset folders
+3-class_behavior-reflex/
+YB_3class_60/
